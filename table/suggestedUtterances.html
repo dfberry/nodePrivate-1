@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" /></script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/3.3.1/js/tabulator.min.js" /></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/3.3.1/css/tabulator.min.css" />
+  
+  </head>
+<body>
+    <form id="LUIS_query" >
+        <input type="text" name="LUIS_accessid" value="fb3488ba06614b4985c1baa7a0af0376">LUIS Programmatic Key<br>
+        <input type="test" name="LUIS_appid" value="d43a0194-fa7e-4740-964b-cc16e8225fdc">LUIS App Id<br>
+        <input type="version" name="LUIS_Version" value="1.0">Verion Id<br>
+        <input type="intent" name="LUIS_intent" value="b09f4071-4ca2-4358-b50b-fe40e1e7ac54">Indent Id<br>
+
+        <input id="submit" type="button" value="submit">
+    </form>
+    <div id="example-table"></div>
+    <div id="LUIS_response"></div>
+<script type="text/javascript">
+
+
+
+  $('#submit').on('click', function () {
+
+    var progKey = $("#progKey");
+
+    $("#example-table").tabulator({
+      height: 205, // set height of table, this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+      layout: "fitColumns", //fit columns to width of table (optional)
+      columns: [ //Define Table Columns
+        { title: "Name", field: "name", width: 150 },
+        { title: "Age", field: "age", align: "left", formatter: "progress" },
+        { title: "Favourite Color", field: "col" },
+        { title: "Date Of Birth", field: "dob", sorter: "date", align: "center" },
+      ],
+      rowClick: function (e, row) { //trigger an alert message when the row is clicked
+        alert("Row " + row.getData().id + " Clicked!!!!");
+      },
+    });
+
+    var params = {
+      // Request parameters
+      "take": "10",
+    };
+
+    var params = {
+      // These are optional request parameters. They are set to their default values.
+      "timezoneOffset": "0",
+      "verbose": "false",
+      "spellCheck": "false",
+      "staging": "false",
+    };
+
+    var form_values = {};
+    $.each($('#LUIS_query').serializeArray(), function (i, field) {
+      form_values[field.name] = field.value;
+    });
+
+
+
+    $.ajax({
+      url: "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/" + form_values["LUIS_appid"] + "/versions/" + form_values["version"] + "/intents/" + form_values["intent"] + "/suggest?take=500",
+      beforeSend: function (xhrObj) {
+        // Request headers
+        xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", form_values["LUIS_accessid"]);
+      },
+      type: "GET",
+    })
+      .done(function (data) {
+        // Display a popup containing the top intent
+        //alert("Detected the following intent: " + data.topScoringIntent.intent);
+        $('#LUIS_response').html(data);
+        $("#example-table").tabulator("setData", data);
+      })
+      .fail(function () {
+        //alert("error");
+        $('#LUIS_response').html(error);
+      });
+
+  });
+</script>
+</body>
+</html>

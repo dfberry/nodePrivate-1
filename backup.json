@@ -1,0 +1,2488 @@
+{
+  "programmaticKey": "fb3488ba06614b4985c1baa7a0af0376",
+  "apps": [
+    {
+      "id": "d43a0194-fa7e-4740-964b-cc16e8225fdc",
+      "name": "FoodOrder-Hierarchical",
+      "description": "Uses food orders to demonstrate hierarchical/composite entities",
+      "culture": "en-us",
+      "usageScenario": "",
+      "domain": "",
+      "versionsCount": 2,
+      "createdDateTime": "2017-10-17T23:13:04Z",
+      "endpoints": {
+        "PRODUCTION": {
+          "versionId": "0.1",
+          "isStaging": false,
+          "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/d43a0194-fa7e-4740-964b-cc16e8225fdc",
+          "region": null,
+          "assignedEndpointKey": "5de1b838ff4c40c99912b13f3671192b",
+          "endpointRegion": "westus",
+          "publishedDateTime": "2017-10-19T22:10:13Z"
+        }
+      },
+      "endpointHitsCount": 10,
+      "activeVersion": "0.1",
+      "properties": [
+        {
+          "route": "appInfo",
+          "values": {
+            "id": "d43a0194-fa7e-4740-964b-cc16e8225fdc",
+            "name": "FoodOrder-Hierarchical",
+            "description": "Uses food orders to demonstrate hierarchical/composite entities",
+            "culture": "en-us",
+            "usageScenario": "",
+            "domain": "",
+            "versionsCount": 2,
+            "createdDateTime": "2017-10-17T23:13:04Z",
+            "endpoints": {
+              "PRODUCTION": {
+                "versionId": "0.1",
+                "isStaging": false,
+                "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/d43a0194-fa7e-4740-964b-cc16e8225fdc",
+                "region": null,
+                "assignedEndpointKey": "5de1b838ff4c40c99912b13f3671192b",
+                "endpointRegion": "westus",
+                "publishedDateTime": "2017-10-19T22:10:13Z"
+              }
+            },
+            "endpointHitsCount": 10,
+            "activeVersion": "0.1"
+          }
+        },
+        {
+          "route": "versions",
+          "values": [
+            {
+              "version": "0.1",
+              "createdDateTime": "2017-10-17T23:13:04Z",
+              "lastModifiedDateTime": "2017-10-26T15:59:06Z",
+              "lastTrainedDateTime": null,
+              "lastPublishedDateTime": "2017-10-19T22:10:15Z",
+              "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/d43a0194-fa7e-4740-964b-cc16e8225fdc",
+              "assignedEndpointKey": {
+                "SubscriptionKey": "5de1b838ff4c40c99912b13f3671192b",
+                "SubscriptionRegion": "westus",
+                "SubscriptionName": "v-luis"
+              },
+              "externalApiKeys": {},
+              "intentsCount": 9,
+              "entitiesCount": 31,
+              "endpointHitsCount": 10,
+              "trainingStatus": "NeedsTraining"
+            },
+            {
+              "version": "thisis",
+              "createdDateTime": "2017-10-29T14:26:31Z",
+              "lastModifiedDateTime": "2017-10-30T18:40:50Z",
+              "lastTrainedDateTime": null,
+              "lastPublishedDateTime": null,
+              "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/d43a0194-fa7e-4740-964b-cc16e8225fdc",
+              "assignedEndpointKey": {
+                "SubscriptionKey": "e237d6bc86cd4562bf67b09dff44d2e6",
+                "SubscriptionRegion": "westus",
+                "SubscriptionName": "StarterKey"
+              },
+              "externalApiKeys": {},
+              "intentsCount": 9,
+              "entitiesCount": 31,
+              "endpointHitsCount": 1,
+              "trainingStatus": "NeedsTraining"
+            }
+          ]
+        },
+        {
+          "route": "settings",
+          "values": {
+            "id": "d43a0194-fa7e-4740-964b-cc16e8225fdc",
+            "public": false
+          }
+        },
+        {
+          "route": "endpoints",
+          "values": {
+            "westus": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/d43a0194-fa7e-4740-964b-cc16e8225fdc",
+            "eastus2": "https://eastus2.api.cognitive.microsoft.com/luis/v2.0/apps/d43a0194-fa7e-4740-964b-cc16e8225fdc",
+            "westcentralus": "https://westcentralus.api.cognitive.microsoft.com/luis/v2.0/apps/d43a0194-fa7e-4740-964b-cc16e8225fdc",
+            "southeastasia": "https://southeastasia.api.cognitive.microsoft.com/luis/v2.0/apps/d43a0194-fa7e-4740-964b-cc16e8225fdc"
+          }
+        },
+        {
+          "route": "versionExports",
+          "values": [
+            {
+              "luis_schema_version": "2.1.0",
+              "versionId": "0.1",
+              "name": "FoodOrder-Hierarchical",
+              "desc": "Uses food orders to demonstrate hierarchical/composite entities",
+              "culture": "en-us",
+              "intents": [
+                {
+                  "name": "None"
+                },
+                {
+                  "name": "Numeric pattern feature test"
+                },
+                {
+                  "name": "OrderBurger"
+                },
+                {
+                  "name": "OrderEspressoDrink"
+                },
+                {
+                  "name": "OrderPho"
+                },
+                {
+                  "name": "OrderRamen"
+                },
+                {
+                  "name": "OrderSandwich"
+                },
+                {
+                  "name": "OrderTea"
+                },
+                {
+                  "name": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+                }
+              ],
+              "entities": [
+                {
+                  "name": "Burger",
+                  "children": [
+                    "Hamburger",
+                    "Cheeseburger",
+                    "VeggieBurger"
+                  ]
+                },
+                {
+                  "name": "Cake",
+                  "children": [
+                    "AngelCake",
+                    "ChocolateCake",
+                    "CheeseCake"
+                  ]
+                },
+                {
+                  "name": "EspressoDrink",
+                  "children": [
+                    "Breve",
+                    "Latte",
+                    "Doppio",
+                    "Cappucino",
+                    "Americano"
+                  ]
+                },
+                {
+                  "name": "FryType",
+                  "children": [
+                    "SweetPotatoFries",
+                    "CurlyFries",
+                    "GarlicFries",
+                    "RegularFries"
+                  ]
+                },
+                {
+                  "name": "GrilledCheese",
+                  "children": [
+                    "CheddarGrilledCheese",
+                    "AmericanGrilledCheese"
+                  ]
+                },
+                {
+                  "name": "IceCream",
+                  "children": [
+                    "VanillaIceCream",
+                    "StrawberryIceCream",
+                    "ChocolateIceCream"
+                  ]
+                },
+                {
+                  "name": "maxEntity1509033545848"
+                },
+                {
+                  "name": "Milkshake",
+                  "children": [
+                    "VanillaShake",
+                    "StrawberryShake",
+                    "ChocolateShake"
+                  ]
+                },
+                {
+                  "name": "OtherSandwich",
+                  "children": [
+                    "ClubSandwich",
+                    "MonteCristo",
+                    "MeatballSub",
+                    "PhillyCheesesteak",
+                    "Sub"
+                  ]
+                },
+                {
+                  "name": "Pastrami",
+                  "children": [
+                    "PastramiOnRye",
+                    "Reuben"
+                  ]
+                },
+                {
+                  "name": "Pho",
+                  "children": [
+                    "SteakPho",
+                    "MeatballPho",
+                    "BrisketPho"
+                  ]
+                },
+                {
+                  "name": "Pizza",
+                  "children": [
+                    "CheesePizza",
+                    "MeatLoversPizza",
+                    "VeggiePizza",
+                    "PepperoniPizza"
+                  ]
+                },
+                {
+                  "name": "Ramen",
+                  "children": [
+                    "ShoyuRamen",
+                    "KitsuneRamen",
+                    "ShioRamen"
+                  ]
+                },
+                {
+                  "name": "Salad",
+                  "children": [
+                    "Garden",
+                    "Caesar"
+                  ]
+                },
+                {
+                  "name": "Soup",
+                  "children": [
+                    "TomatoSoup",
+                    "ChickenSoup",
+                    "BeefBarleySoup"
+                  ]
+                },
+                {
+                  "name": "Tea",
+                  "children": [
+                    "HerbalTea",
+                    "GreenTea",
+                    "BlackTea"
+                  ]
+                }
+              ],
+              "composites": [
+                {
+                  "name": "BurgerOrder",
+                  "children": [
+                    "Burger",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "CakeOrder",
+                  "children": [
+                    "Cake",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "EspressoDrinkOrder",
+                  "children": [
+                    "DrinkSize",
+                    "number",
+                    "EspressoDrink"
+                  ]
+                },
+                {
+                  "name": "GrilledCheeseOrder",
+                  "children": [
+                    "GrilledCheese",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "IceCreamOrder",
+                  "children": [
+                    "IceCream",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "MilkshakeOrder",
+                  "children": [
+                    "Milkshake",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "OtherSandwichOrder",
+                  "children": [
+                    "OtherSandwich",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "PastramiSandwichOrder",
+                  "children": [
+                    "number",
+                    "Pastrami"
+                  ]
+                },
+                {
+                  "name": "PhoOrder",
+                  "children": [
+                    "number",
+                    "Pho"
+                  ]
+                },
+                {
+                  "name": "PizzaOrder",
+                  "children": [
+                    "number",
+                    "Pizza"
+                  ]
+                },
+                {
+                  "name": "RamenOrder",
+                  "children": [
+                    "number",
+                    "Ramen"
+                  ]
+                },
+                {
+                  "name": "SaladOrder",
+                  "children": [
+                    "number",
+                    "Salad"
+                  ]
+                },
+                {
+                  "name": "SoupOrder",
+                  "children": [
+                    "number",
+                    "Soup"
+                  ]
+                },
+                {
+                  "name": "TeaOrder",
+                  "children": [
+                    "number",
+                    "Tea"
+                  ]
+                }
+              ],
+              "closedLists": [
+                {
+                  "name": "DrinkSize",
+                  "subLists": [
+                    {
+                      "canonicalForm": "Large",
+                      "list": [
+                        "20oz",
+                        "venti"
+                      ]
+                    },
+                    {
+                      "canonicalForm": "Small",
+                      "list": [
+                        "short",
+                        "8oz"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "States",
+                  "subLists": [
+                    {
+                      "canonicalForm": "New York",
+                      "list": [
+                        "ny",
+                        "new york"
+                      ]
+                    },
+                    {
+                      "canonicalForm": "Washington",
+                      "list": [
+                        "washington",
+                        "wa"
+                      ]
+                    },
+                    {
+                      "canonicalForm": "California",
+                      "list": [
+                        "california",
+                        "ca",
+                        "calif.",
+                        "cal."
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "bing_entities": [
+                "number"
+              ],
+              "actions": [],
+              "model_features": [],
+              "regex_features": [
+                {
+                  "name": "6 digits max",
+                  "pattern": "^[0-9]{1,6}$",
+                  "activated": true
+                }
+              ],
+              "utterances": [
+                {
+                  "text": "turn on the light",
+                  "intent": "None",
+                  "entities": []
+                },
+                {
+                  "text": "drive me home",
+                  "intent": "None",
+                  "entities": []
+                },
+                {
+                  "text": "one espresso",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink",
+                      "startPos": 4,
+                      "endPos": 11
+                    }
+                  ]
+                },
+                {
+                  "text": "i want a hoagie",
+                  "intent": "OrderSandwich",
+                  "entities": []
+                },
+                {
+                  "text": "get me a hamburger with no onion",
+                  "intent": "OrderBurger",
+                  "entities": [
+                    {
+                      "entity": "Burger::Hamburger",
+                      "startPos": 9,
+                      "endPos": 17
+                    }
+                  ]
+                },
+                {
+                  "text": "i'd like a burger with ketchup and pickles",
+                  "intent": "OrderBurger",
+                  "entities": [
+                    {
+                      "entity": "Burger::Hamburger",
+                      "startPos": 11,
+                      "endPos": 16
+                    }
+                  ]
+                },
+                {
+                  "text": "order a philly cheesesteak",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "OtherSandwich",
+                      "startPos": 8,
+                      "endPos": 25
+                    }
+                  ]
+                },
+                {
+                  "text": "i want a pastrami on rye",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "Pastrami::PastramiOnRye",
+                      "startPos": 9,
+                      "endPos": 23
+                    }
+                  ]
+                },
+                {
+                  "text": "i want to order a reuben",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "OtherSandwich",
+                      "startPos": 18,
+                      "endPos": 23
+                    }
+                  ]
+                },
+                {
+                  "text": "get me a grilled cheese",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "GrilledCheese",
+                      "startPos": 9,
+                      "endPos": 22
+                    }
+                  ]
+                },
+                {
+                  "text": "i want to order a sub",
+                  "intent": "OrderSandwich",
+                  "entities": []
+                },
+                {
+                  "text": "a sub sandwich please",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "OtherSandwich::Sub",
+                      "startPos": 2,
+                      "endPos": 13
+                    }
+                  ]
+                },
+                {
+                  "text": "i want to order pho",
+                  "intent": "OrderPho",
+                  "entities": []
+                },
+                {
+                  "text": "i want to order ramen",
+                  "intent": "OrderPho",
+                  "entities": []
+                },
+                {
+                  "text": "i'd like a black tea",
+                  "intent": "OrderTea",
+                  "entities": [
+                    {
+                      "entity": "Tea::BlackTea",
+                      "startPos": 11,
+                      "endPos": 19
+                    }
+                  ]
+                },
+                {
+                  "text": "one green tea",
+                  "intent": "OrderTea",
+                  "entities": [
+                    {
+                      "entity": "Tea::GreenTea",
+                      "startPos": 4,
+                      "endPos": 12
+                    }
+                  ]
+                },
+                {
+                  "text": "i'd like one herbal tea",
+                  "intent": "OrderTea",
+                  "entities": [
+                    {
+                      "entity": "Tea::HerbalTea",
+                      "startPos": 13,
+                      "endPos": 22
+                    }
+                  ]
+                },
+                {
+                  "text": "order me two shio ramens",
+                  "intent": "OrderRamen",
+                  "entities": [
+                    {
+                      "entity": "Ramen",
+                      "startPos": 13,
+                      "endPos": 23
+                    }
+                  ]
+                },
+                {
+                  "text": "two americanos",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink::Americano",
+                      "startPos": 4,
+                      "endPos": 13
+                    }
+                  ]
+                },
+                {
+                  "text": "two lattes",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink::Latte",
+                      "startPos": 4,
+                      "endPos": 9
+                    }
+                  ]
+                },
+                {
+                  "text": "one capuccino",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink::Cappucino",
+                      "startPos": 4,
+                      "endPos": 12
+                    }
+                  ]
+                },
+                {
+                  "text": "one doppio",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink::Doppio",
+                      "startPos": 4,
+                      "endPos": 9
+                    }
+                  ]
+                },
+                {
+                  "text": "1 venti espresso",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink",
+                      "startPos": 8,
+                      "endPos": 15
+                    }
+                  ]
+                },
+                {
+                  "text": "5 short maccs",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink",
+                      "startPos": 8,
+                      "endPos": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "luis_schema_version": "2.1.0",
+              "versionId": "thisis",
+              "name": "FoodOrder-Hierarchical",
+              "desc": "Uses food orders to demonstrate hierarchical/composite entities",
+              "culture": "en-us",
+              "intents": [
+                {
+                  "name": "None"
+                },
+                {
+                  "name": "Numeric pattern feature test"
+                },
+                {
+                  "name": "OrderBurger"
+                },
+                {
+                  "name": "OrderEspressoDrink"
+                },
+                {
+                  "name": "OrderPho"
+                },
+                {
+                  "name": "OrderRamen"
+                },
+                {
+                  "name": "OrderSandwich"
+                },
+                {
+                  "name": "OrderTea"
+                },
+                {
+                  "name": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+                }
+              ],
+              "entities": [
+                {
+                  "name": "Burger",
+                  "children": [
+                    "Cheeseburger",
+                    "VeggieBurger",
+                    "Hamburger"
+                  ]
+                },
+                {
+                  "name": "Cake",
+                  "children": [
+                    "ChocolateCake",
+                    "AngelCake",
+                    "CheeseCake"
+                  ]
+                },
+                {
+                  "name": "EspressoDrink",
+                  "children": [
+                    "Americano",
+                    "Latte",
+                    "Cappucino",
+                    "Doppio",
+                    "Breve"
+                  ]
+                },
+                {
+                  "name": "FryType",
+                  "children": [
+                    "CurlyFries",
+                    "GarlicFries",
+                    "SweetPotatoFries",
+                    "RegularFries"
+                  ]
+                },
+                {
+                  "name": "GrilledCheese",
+                  "children": [
+                    "AmericanGrilledCheese",
+                    "CheddarGrilledCheese"
+                  ]
+                },
+                {
+                  "name": "IceCream",
+                  "children": [
+                    "StrawberryIceCream",
+                    "ChocolateIceCream",
+                    "VanillaIceCream"
+                  ]
+                },
+                {
+                  "name": "maxEntity1509033545848"
+                },
+                {
+                  "name": "Milkshake",
+                  "children": [
+                    "ChocolateShake",
+                    "StrawberryShake",
+                    "VanillaShake"
+                  ]
+                },
+                {
+                  "name": "OtherSandwich",
+                  "children": [
+                    "PhillyCheesesteak",
+                    "MeatballSub",
+                    "MonteCristo",
+                    "Sub",
+                    "ClubSandwich"
+                  ]
+                },
+                {
+                  "name": "Pastrami",
+                  "children": [
+                    "PastramiOnRye",
+                    "Reuben"
+                  ]
+                },
+                {
+                  "name": "Pho",
+                  "children": [
+                    "BrisketPho",
+                    "MeatballPho",
+                    "SteakPho"
+                  ]
+                },
+                {
+                  "name": "Pizza",
+                  "children": [
+                    "VeggiePizza",
+                    "MeatLoversPizza",
+                    "CheesePizza",
+                    "PepperoniPizza"
+                  ]
+                },
+                {
+                  "name": "Ramen",
+                  "children": [
+                    "KitsuneRamen",
+                    "ShioRamen",
+                    "ShoyuRamen"
+                  ]
+                },
+                {
+                  "name": "Salad",
+                  "children": [
+                    "Caesar",
+                    "Garden"
+                  ]
+                },
+                {
+                  "name": "Soup",
+                  "children": [
+                    "BeefBarleySoup",
+                    "ChickenSoup",
+                    "TomatoSoup"
+                  ]
+                },
+                {
+                  "name": "Tea",
+                  "children": [
+                    "HerbalTea",
+                    "GreenTea",
+                    "BlackTea"
+                  ]
+                }
+              ],
+              "composites": [
+                {
+                  "name": "BurgerOrder",
+                  "children": [
+                    "Burger",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "CakeOrder",
+                  "children": [
+                    "Cake",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "EspressoDrinkOrder",
+                  "children": [
+                    "EspressoDrink",
+                    "DrinkSize",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "GrilledCheeseOrder",
+                  "children": [
+                    "GrilledCheese",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "IceCreamOrder",
+                  "children": [
+                    "IceCream",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "MilkshakeOrder",
+                  "children": [
+                    "Milkshake",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "OtherSandwichOrder",
+                  "children": [
+                    "OtherSandwich",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "PastramiSandwichOrder",
+                  "children": [
+                    "Pastrami",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "PhoOrder",
+                  "children": [
+                    "number",
+                    "Pho"
+                  ]
+                },
+                {
+                  "name": "PizzaOrder",
+                  "children": [
+                    "number",
+                    "Pizza"
+                  ]
+                },
+                {
+                  "name": "RamenOrder",
+                  "children": [
+                    "number",
+                    "Ramen"
+                  ]
+                },
+                {
+                  "name": "SaladOrder",
+                  "children": [
+                    "number",
+                    "Salad"
+                  ]
+                },
+                {
+                  "name": "SoupOrder",
+                  "children": [
+                    "Soup",
+                    "number"
+                  ]
+                },
+                {
+                  "name": "TeaOrder",
+                  "children": [
+                    "number",
+                    "Tea"
+                  ]
+                }
+              ],
+              "closedLists": [
+                {
+                  "name": "DrinkSize",
+                  "subLists": [
+                    {
+                      "canonicalForm": "Large",
+                      "list": [
+                        "20oz",
+                        "venti"
+                      ]
+                    },
+                    {
+                      "canonicalForm": "Small",
+                      "list": [
+                        "short",
+                        "8oz"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "States",
+                  "subLists": [
+                    {
+                      "canonicalForm": "New York",
+                      "list": [
+                        "ny",
+                        "new york"
+                      ]
+                    },
+                    {
+                      "canonicalForm": "Washington",
+                      "list": [
+                        "washington",
+                        "wa"
+                      ]
+                    },
+                    {
+                      "canonicalForm": "California",
+                      "list": [
+                        "california",
+                        "ca",
+                        "calif.",
+                        "cal."
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "bing_entities": [
+                "number"
+              ],
+              "actions": [],
+              "model_features": [],
+              "regex_features": [
+                {
+                  "name": "6 digits max",
+                  "pattern": "^[0-9]{1,6}$",
+                  "activated": true
+                }
+              ],
+              "utterances": [
+                {
+                  "text": "turn on the light",
+                  "intent": "None",
+                  "entities": []
+                },
+                {
+                  "text": "drive me home",
+                  "intent": "None",
+                  "entities": []
+                },
+                {
+                  "text": "one espresso",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink",
+                      "startPos": 4,
+                      "endPos": 11
+                    }
+                  ]
+                },
+                {
+                  "text": "i want a hoagie",
+                  "intent": "OrderSandwich",
+                  "entities": []
+                },
+                {
+                  "text": "get me a hamburger with no onion",
+                  "intent": "OrderBurger",
+                  "entities": [
+                    {
+                      "entity": "Burger::Hamburger",
+                      "startPos": 9,
+                      "endPos": 17
+                    }
+                  ]
+                },
+                {
+                  "text": "i'd like a burger with ketchup and pickles",
+                  "intent": "OrderBurger",
+                  "entities": [
+                    {
+                      "entity": "Burger::Hamburger",
+                      "startPos": 11,
+                      "endPos": 16
+                    }
+                  ]
+                },
+                {
+                  "text": "order a philly cheesesteak",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "OtherSandwich",
+                      "startPos": 8,
+                      "endPos": 25
+                    }
+                  ]
+                },
+                {
+                  "text": "i want a pastrami on rye",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "Pastrami::PastramiOnRye",
+                      "startPos": 9,
+                      "endPos": 23
+                    }
+                  ]
+                },
+                {
+                  "text": "i want to order a reuben",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "OtherSandwich",
+                      "startPos": 18,
+                      "endPos": 23
+                    }
+                  ]
+                },
+                {
+                  "text": "get me a grilled cheese",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "GrilledCheese",
+                      "startPos": 9,
+                      "endPos": 22
+                    }
+                  ]
+                },
+                {
+                  "text": "i want to order a sub",
+                  "intent": "OrderSandwich",
+                  "entities": []
+                },
+                {
+                  "text": "a sub sandwich please",
+                  "intent": "OrderSandwich",
+                  "entities": [
+                    {
+                      "entity": "OtherSandwich::Sub",
+                      "startPos": 2,
+                      "endPos": 13
+                    }
+                  ]
+                },
+                {
+                  "text": "i want to order pho",
+                  "intent": "OrderPho",
+                  "entities": []
+                },
+                {
+                  "text": "i want to order ramen",
+                  "intent": "OrderPho",
+                  "entities": []
+                },
+                {
+                  "text": "i'd like a black tea",
+                  "intent": "OrderTea",
+                  "entities": [
+                    {
+                      "entity": "Tea::BlackTea",
+                      "startPos": 11,
+                      "endPos": 19
+                    }
+                  ]
+                },
+                {
+                  "text": "one green tea",
+                  "intent": "OrderTea",
+                  "entities": [
+                    {
+                      "entity": "Tea::GreenTea",
+                      "startPos": 4,
+                      "endPos": 12
+                    }
+                  ]
+                },
+                {
+                  "text": "i'd like one herbal tea",
+                  "intent": "OrderTea",
+                  "entities": [
+                    {
+                      "entity": "Tea::HerbalTea",
+                      "startPos": 13,
+                      "endPos": 22
+                    }
+                  ]
+                },
+                {
+                  "text": "order me two shio ramens",
+                  "intent": "OrderRamen",
+                  "entities": [
+                    {
+                      "entity": "Ramen",
+                      "startPos": 13,
+                      "endPos": 23
+                    }
+                  ]
+                },
+                {
+                  "text": "two americanos",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink::Americano",
+                      "startPos": 4,
+                      "endPos": 13
+                    }
+                  ]
+                },
+                {
+                  "text": "two lattes",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink::Latte",
+                      "startPos": 4,
+                      "endPos": 9
+                    }
+                  ]
+                },
+                {
+                  "text": "one capuccino",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink::Cappucino",
+                      "startPos": 4,
+                      "endPos": 12
+                    }
+                  ]
+                },
+                {
+                  "text": "one doppio",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink::Doppio",
+                      "startPos": 4,
+                      "endPos": 9
+                    }
+                  ]
+                },
+                {
+                  "text": "1 venti espresso",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink",
+                      "startPos": 8,
+                      "endPos": 15
+                    }
+                  ]
+                },
+                {
+                  "text": "5 short maccs",
+                  "intent": "OrderEspressoDrink",
+                  "entities": [
+                    {
+                      "entity": "EspressoDrink",
+                      "startPos": 8,
+                      "endPos": 12
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+      "name": "Home Automation",
+      "description": "",
+      "culture": "en-us",
+      "usageScenario": "",
+      "domain": "",
+      "versionsCount": 1,
+      "createdDateTime": "2017-11-01T18:22:05Z",
+      "endpoints": {
+        "PRODUCTION": {
+          "versionId": "0.1",
+          "isStaging": false,
+          "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+          "region": null,
+          "assignedEndpointKey": "fb3488ba06614b4985c1baa7a0af0376",
+          "endpointRegion": "westus",
+          "publishedDateTime": "2017-11-01T18:50:27Z"
+        }
+      },
+      "endpointHitsCount": 0,
+      "activeVersion": "0.1",
+      "properties": [
+        {
+          "route": "appInfo",
+          "values": {
+            "id": "b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+            "name": "Home Automation",
+            "description": "",
+            "culture": "en-us",
+            "usageScenario": "",
+            "domain": "",
+            "versionsCount": 1,
+            "createdDateTime": "2017-11-01T18:22:05Z",
+            "endpoints": {
+              "PRODUCTION": {
+                "versionId": "0.1",
+                "isStaging": false,
+                "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+                "region": null,
+                "assignedEndpointKey": "fb3488ba06614b4985c1baa7a0af0376",
+                "endpointRegion": "westus",
+                "publishedDateTime": "2017-11-01T18:50:27Z"
+              }
+            },
+            "endpointHitsCount": 0,
+            "activeVersion": "0.1"
+          }
+        },
+        {
+          "route": "versions",
+          "values": [
+            {
+              "version": "0.1",
+              "createdDateTime": "2017-11-01T18:22:04Z",
+              "lastModifiedDateTime": "2017-11-01T18:47:12Z",
+              "lastTrainedDateTime": "2017-11-01T18:47:20Z",
+              "lastPublishedDateTime": "2017-11-01T18:50:27Z",
+              "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+              "assignedEndpointKey": {
+                "SubscriptionKey": "fb3488ba06614b4985c1baa7a0af0376",
+                "SubscriptionRegion": "westus",
+                "SubscriptionName": "StarterKey"
+              },
+              "externalApiKeys": {},
+              "intentsCount": 3,
+              "entitiesCount": 3,
+              "endpointHitsCount": 0,
+              "trainingStatus": "Trained"
+            }
+          ]
+        },
+        {
+          "route": "settings",
+          "values": {
+            "id": "b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+            "public": false
+          }
+        },
+        {
+          "route": "endpoints",
+          "values": {
+            "westus": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+            "eastus2": "https://eastus2.api.cognitive.microsoft.com/luis/v2.0/apps/b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+            "westcentralus": "https://westcentralus.api.cognitive.microsoft.com/luis/v2.0/apps/b7bcd0f6-2560-43bf-a642-7b0c2e13782b",
+            "southeastasia": "https://southeastasia.api.cognitive.microsoft.com/luis/v2.0/apps/b7bcd0f6-2560-43bf-a642-7b0c2e13782b"
+          }
+        },
+        {
+          "route": "versionExports",
+          "values": [
+            {
+              "luis_schema_version": "2.1.0",
+              "versionId": "0.1",
+              "name": "Home Automation",
+              "desc": "",
+              "culture": "en-us",
+              "intents": [
+                {
+                  "name": "HomeAutomation.TurnOff",
+                  "inherits": {
+                    "domain_name": "HomeAutomation",
+                    "model_name": "TurnOff"
+                  }
+                },
+                {
+                  "name": "HomeAutomation.TurnOn",
+                  "inherits": {
+                    "domain_name": "HomeAutomation",
+                    "model_name": "TurnOn"
+                  }
+                },
+                {
+                  "name": "None"
+                }
+              ],
+              "entities": [
+                {
+                  "name": "HomeAutomation.Device",
+                  "inherits": {
+                    "domain_name": "HomeAutomation",
+                    "model_name": "Device"
+                  }
+                },
+                {
+                  "name": "HomeAutomation.Operation",
+                  "inherits": {
+                    "domain_name": "HomeAutomation",
+                    "model_name": "Operation"
+                  }
+                },
+                {
+                  "name": "HomeAutomation.Room",
+                  "inherits": {
+                    "domain_name": "HomeAutomation",
+                    "model_name": "Room"
+                  }
+                }
+              ],
+              "composites": [],
+              "closedLists": [],
+              "bing_entities": [],
+              "actions": [],
+              "model_features": [],
+              "regex_features": [],
+              "utterances": [
+                {
+                  "text": "make some coffee",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 10,
+                      "endPos": 15
+                    }
+                  ]
+                },
+                {
+                  "text": "turn off living room light",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 9,
+                      "endPos": 19
+                    }
+                  ]
+                },
+                {
+                  "text": "Turn off ac please",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 9,
+                      "endPos": 10
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 5,
+                      "endPos": 7
+                    }
+                  ]
+                },
+                {
+                  "text": "set lights out bedroom",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 15,
+                      "endPos": 21
+                    },
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 4,
+                      "endPos": 9
+                    }
+                  ]
+                },
+                {
+                  "text": "shut down my work computer",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 18,
+                      "endPos": 25
+                    }
+                  ]
+                },
+                {
+                  "text": "turn dimmer off",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 5,
+                      "endPos": 10
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 12,
+                      "endPos": 14
+                    }
+                  ]
+                },
+                {
+                  "text": "lock the doors for me please",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 9,
+                      "endPos": 13
+                    }
+                  ]
+                },
+                {
+                  "text": "silence the phone",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 12,
+                      "endPos": 16
+                    }
+                  ]
+                },
+                {
+                  "text": "Make camera 1 off please",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 5,
+                      "endPos": 10
+                    }
+                  ]
+                },
+                {
+                  "text": "fish pond off please",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 0,
+                      "endPos": 8
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 10,
+                      "endPos": 12
+                    }
+                  ]
+                },
+                {
+                  "text": "living room lamps off please",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 0,
+                      "endPos": 10
+                    }
+                  ]
+                },
+                {
+                  "text": "turn off venice lamp",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 5,
+                      "endPos": 7
+                    }
+                  ]
+                },
+                {
+                  "text": "change temperature to seventy two degrees",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 7,
+                      "endPos": 17
+                    }
+                  ]
+                },
+                {
+                  "text": "coffee bar on please",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 0,
+                      "endPos": 9
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 11,
+                      "endPos": 12
+                    }
+                  ]
+                },
+                {
+                  "text": "play dvd",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 5,
+                      "endPos": 7
+                    }
+                  ]
+                },
+                {
+                  "text": "turn thermostat on 70 .",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 5,
+                      "endPos": 14
+                    }
+                  ]
+                },
+                {
+                  "text": "illuminate please",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 0,
+                      "endPos": 9
+                    }
+                  ]
+                },
+                {
+                  "text": "start master bedroom light .",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 6,
+                      "endPos": 19
+                    }
+                  ]
+                },
+                {
+                  "text": "Turn the fan to high",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 9,
+                      "endPos": 11
+                    }
+                  ]
+                },
+                {
+                  "text": "set lights bright",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 4,
+                      "endPos": 9
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 11,
+                      "endPos": 16
+                    }
+                  ]
+                },
+                {
+                  "text": "living room lamp on please",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 0,
+                      "endPos": 10
+                    },
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 12,
+                      "endPos": 15
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 17,
+                      "endPos": 18
+                    }
+                  ]
+                },
+                {
+                  "text": "turn off foyer lights",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 9,
+                      "endPos": 13
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 5,
+                      "endPos": 7
+                    }
+                  ]
+                },
+                {
+                  "text": "breezeway on please",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 0,
+                      "endPos": 8
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 10,
+                      "endPos": 11
+                    }
+                  ]
+                },
+                {
+                  "text": "theater on please",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 0,
+                      "endPos": 6
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 8,
+                      "endPos": 9
+                    }
+                  ]
+                },
+                {
+                  "text": "turn on bathroom heater",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 8,
+                      "endPos": 15
+                    },
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 17,
+                      "endPos": 22
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 5,
+                      "endPos": 6
+                    }
+                  ]
+                },
+                {
+                  "text": "Turn on the furnace room lights",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 12,
+                      "endPos": 23
+                    }
+                  ]
+                },
+                {
+                  "text": "snap switch fan fifty percent",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 12,
+                      "endPos": 14
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 16,
+                      "endPos": 28
+                    }
+                  ]
+                },
+                {
+                  "text": "fish pond on please",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": []
+                },
+                {
+                  "text": "set lights concentrate",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 4,
+                      "endPos": 9
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 11,
+                      "endPos": 21
+                    }
+                  ]
+                },
+                {
+                  "text": "turn off staircase",
+                  "intent": "HomeAutomation.TurnOff",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Device",
+                      "startPos": 9,
+                      "endPos": 17
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 5,
+                      "endPos": 7
+                    }
+                  ]
+                },
+                {
+                  "text": "dim kitchen lights to 25 .",
+                  "intent": "None",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 4,
+                      "endPos": 10
+                    }
+                  ]
+                },
+                {
+                  "text": "turn on my bedroom lights .",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 11,
+                      "endPos": 17
+                    },
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 5,
+                      "endPos": 6
+                    }
+                  ]
+                },
+                {
+                  "text": "turn on the internet in my bedroom please",
+                  "intent": "None",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Room",
+                      "startPos": 27,
+                      "endPos": 33
+                    }
+                  ]
+                },
+                {
+                  "text": "lower your volume",
+                  "intent": "None",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 11,
+                      "endPos": 16
+                    }
+                  ]
+                },
+                {
+                  "text": "decrease temperature for me please",
+                  "intent": "None",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 9,
+                      "endPos": 19
+                    }
+                  ]
+                },
+                {
+                  "text": "turn on external speaker",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 5,
+                      "endPos": 6
+                    }
+                  ]
+                },
+                {
+                  "text": "turn on thermostat please",
+                  "intent": "HomeAutomation.TurnOn",
+                  "entities": [
+                    {
+                      "entity": "HomeAutomation.Operation",
+                      "startPos": 5,
+                      "endPos": 6
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+      "name": "LuisBot",
+      "description": "",
+      "culture": "en-us",
+      "usageScenario": "",
+      "domain": "",
+      "versionsCount": 1,
+      "createdDateTime": "2017-10-14T21:05:34Z",
+      "endpoints": {
+        "PRODUCTION": {
+          "versionId": "0.1",
+          "isStaging": false,
+          "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+          "region": null,
+          "assignedEndpointKey": "bdc5fa9a231c4f139b3bb02be70c7dd8",
+          "endpointRegion": "westus",
+          "publishedDateTime": "2017-10-14T21:20:06Z"
+        }
+      },
+      "endpointHitsCount": 2,
+      "activeVersion": "0.1",
+      "properties": [
+        {
+          "route": "appInfo",
+          "values": {
+            "id": "3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+            "name": "LuisBot",
+            "description": "",
+            "culture": "en-us",
+            "usageScenario": "",
+            "domain": "",
+            "versionsCount": 1,
+            "createdDateTime": "2017-10-14T21:05:34Z",
+            "endpoints": {
+              "PRODUCTION": {
+                "versionId": "0.1",
+                "isStaging": false,
+                "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+                "region": null,
+                "assignedEndpointKey": "bdc5fa9a231c4f139b3bb02be70c7dd8",
+                "endpointRegion": "westus",
+                "publishedDateTime": "2017-10-14T21:20:06Z"
+              }
+            },
+            "endpointHitsCount": 2,
+            "activeVersion": "0.1"
+          }
+        },
+        {
+          "route": "versions",
+          "values": [
+            {
+              "version": "0.1",
+              "createdDateTime": "2017-10-14T21:05:32Z",
+              "lastModifiedDateTime": "2017-10-14T21:20:00Z",
+              "lastTrainedDateTime": "2017-10-14T21:05:50Z",
+              "lastPublishedDateTime": "2017-10-14T21:20:06Z",
+              "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+              "assignedEndpointKey": {
+                "SubscriptionKey": "bdc5fa9a231c4f139b3bb02be70c7dd8",
+                "SubscriptionRegion": "westus",
+                "SubscriptionName": "luis-bot-test"
+              },
+              "externalApiKeys": {},
+              "intentsCount": 4,
+              "entitiesCount": 3,
+              "endpointHitsCount": 2,
+              "trainingStatus": "Trained"
+            }
+          ]
+        },
+        {
+          "route": "settings",
+          "values": {
+            "id": "3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+            "public": false
+          }
+        },
+        {
+          "route": "endpoints",
+          "values": {
+            "westus": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+            "eastus2": "https://eastus2.api.cognitive.microsoft.com/luis/v2.0/apps/3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+            "westcentralus": "https://westcentralus.api.cognitive.microsoft.com/luis/v2.0/apps/3ad8c6ca-0260-4343-9d03-1e6384ccfdba",
+            "southeastasia": "https://southeastasia.api.cognitive.microsoft.com/luis/v2.0/apps/3ad8c6ca-0260-4343-9d03-1e6384ccfdba"
+          }
+        },
+        {
+          "route": "versionExports",
+          "values": [
+            {
+              "luis_schema_version": "2.1.0",
+              "versionId": "0.1",
+              "name": "LuisBot",
+              "desc": "",
+              "culture": "en-us",
+              "intents": [
+                {
+                  "name": "Help"
+                },
+                {
+                  "name": "None"
+                },
+                {
+                  "name": "SearchHotels"
+                },
+                {
+                  "name": "ShowHotelsReviews"
+                }
+              ],
+              "entities": [
+                {
+                  "name": "AirportCode"
+                },
+                {
+                  "name": "Hotel"
+                }
+              ],
+              "composites": [],
+              "closedLists": [],
+              "bing_entities": [
+                "geography"
+              ],
+              "actions": [],
+              "model_features": [
+                {
+                  "name": "Near",
+                  "mode": true,
+                  "words": "near,around,close,nearby",
+                  "activated": true
+                },
+                {
+                  "name": "Show",
+                  "mode": true,
+                  "words": "show,find,look,search",
+                  "activated": true
+                }
+              ],
+              "regex_features": [
+                {
+                  "name": "AirportCodeRegex",
+                  "pattern": "[a-z]{3}",
+                  "activated": true
+                }
+              ],
+              "utterances": [
+                {
+                  "text": "i need help",
+                  "intent": "Help",
+                  "entities": []
+                },
+                {
+                  "text": "help me",
+                  "intent": "Help",
+                  "entities": []
+                },
+                {
+                  "text": "search for hotels in seattle",
+                  "intent": "SearchHotels",
+                  "entities": []
+                },
+                {
+                  "text": "what can i do?",
+                  "intent": "Help",
+                  "entities": []
+                },
+                {
+                  "text": "look for hotels in miami",
+                  "intent": "SearchHotels",
+                  "entities": []
+                },
+                {
+                  "text": "show me hotels in california",
+                  "intent": "SearchHotels",
+                  "entities": []
+                },
+                {
+                  "text": "show me the reviews of the amazing bot resort",
+                  "intent": "ShowHotelsReviews",
+                  "entities": [
+                    {
+                      "entity": "Hotel",
+                      "startPos": 23,
+                      "endPos": 44
+                    }
+                  ]
+                },
+                {
+                  "text": "can i see the reviews of extended bot hotel?",
+                  "intent": "ShowHotelsReviews",
+                  "entities": [
+                    {
+                      "entity": "Hotel",
+                      "startPos": 25,
+                      "endPos": 42
+                    }
+                  ]
+                },
+                {
+                  "text": "find reviews of hotelxya",
+                  "intent": "ShowHotelsReviews",
+                  "entities": [
+                    {
+                      "entity": "Hotel",
+                      "startPos": 16,
+                      "endPos": 23
+                    }
+                  ]
+                },
+                {
+                  "text": "show me reviews of the amazing hotel",
+                  "intent": "ShowHotelsReviews",
+                  "entities": [
+                    {
+                      "entity": "Hotel",
+                      "startPos": 19,
+                      "endPos": 35
+                    }
+                  ]
+                },
+                {
+                  "text": "what are the available options?",
+                  "intent": "Help",
+                  "entities": []
+                },
+                {
+                  "text": "best hotels in seattle",
+                  "intent": "SearchHotels",
+                  "entities": []
+                },
+                {
+                  "text": "hotels in los angeles",
+                  "intent": "SearchHotels",
+                  "entities": []
+                },
+                {
+                  "text": "can you show me hotels from los angeles?",
+                  "intent": "SearchHotels",
+                  "entities": []
+                },
+                {
+                  "text": "can you show me the reviews of the amazing resort & hotel",
+                  "intent": "ShowHotelsReviews",
+                  "entities": [
+                    {
+                      "entity": "Hotel",
+                      "startPos": 31,
+                      "endPos": 56
+                    }
+                  ]
+                },
+                {
+                  "text": "what are the reviews of the hotel bot framework?",
+                  "intent": "ShowHotelsReviews",
+                  "entities": [
+                    {
+                      "entity": "Hotel",
+                      "startPos": 24,
+                      "endPos": 46
+                    }
+                  ]
+                },
+                {
+                  "text": "find hotels near eze",
+                  "intent": "SearchHotels",
+                  "entities": [
+                    {
+                      "entity": "AirportCode",
+                      "startPos": 17,
+                      "endPos": 19
+                    }
+                  ]
+                },
+                {
+                  "text": "where can i stay near nnn?",
+                  "intent": "SearchHotels",
+                  "entities": [
+                    {
+                      "entity": "AirportCode",
+                      "startPos": 22,
+                      "endPos": 24
+                    }
+                  ]
+                },
+                {
+                  "text": "show hotels near att airport",
+                  "intent": "SearchHotels",
+                  "entities": [
+                    {
+                      "entity": "AirportCode",
+                      "startPos": 17,
+                      "endPos": 19
+                    }
+                  ]
+                },
+                {
+                  "text": "find hotels near agl",
+                  "intent": "SearchHotels",
+                  "entities": [
+                    {
+                      "entity": "AirportCode",
+                      "startPos": 17,
+                      "endPos": 19
+                    }
+                  ]
+                },
+                {
+                  "text": "find hotels around eze airport",
+                  "intent": "SearchHotels",
+                  "entities": [
+                    {
+                      "entity": "AirportCode",
+                      "startPos": 19,
+                      "endPos": 21
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2cce2d6a-2500-4ce7-804c-51da84609209",
+      "name": "TravelApp",
+      "description": "",
+      "culture": "en-us",
+      "usageScenario": "",
+      "domain": "",
+      "versionsCount": 2,
+      "createdDateTime": "2017-10-05T19:56:23Z",
+      "endpoints": {
+        "PRODUCTION": {
+          "versionId": "0.1",
+          "isStaging": false,
+          "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2cce2d6a-2500-4ce7-804c-51da84609209",
+          "region": null,
+          "assignedEndpointKey": "fb3488ba06614b4985c1baa7a0af0376",
+          "endpointRegion": "westus",
+          "publishedDateTime": "2017-10-08T03:35:00Z"
+        }
+      },
+      "endpointHitsCount": 0,
+      "activeVersion": "0.1",
+      "properties": [
+        {
+          "route": "appInfo",
+          "values": {
+            "id": "2cce2d6a-2500-4ce7-804c-51da84609209",
+            "name": "TravelApp",
+            "description": "",
+            "culture": "en-us",
+            "usageScenario": "",
+            "domain": "",
+            "versionsCount": 2,
+            "createdDateTime": "2017-10-05T19:56:23Z",
+            "endpoints": {
+              "PRODUCTION": {
+                "versionId": "0.1",
+                "isStaging": false,
+                "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2cce2d6a-2500-4ce7-804c-51da84609209",
+                "region": null,
+                "assignedEndpointKey": "fb3488ba06614b4985c1baa7a0af0376",
+                "endpointRegion": "westus",
+                "publishedDateTime": "2017-10-08T03:35:00Z"
+              }
+            },
+            "endpointHitsCount": 0,
+            "activeVersion": "0.1"
+          }
+        },
+        {
+          "route": "versions",
+          "values": [
+            {
+              "version": "0.1",
+              "createdDateTime": "2017-10-05T19:56:22Z",
+              "lastModifiedDateTime": "2017-10-08T03:42:49Z",
+              "lastTrainedDateTime": "2017-10-05T19:58:15Z",
+              "lastPublishedDateTime": "2017-10-08T03:35:00Z",
+              "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2cce2d6a-2500-4ce7-804c-51da84609209",
+              "assignedEndpointKey": {
+                "SubscriptionKey": "fb3488ba06614b4985c1baa7a0af0376",
+                "SubscriptionRegion": "westus",
+                "SubscriptionName": "StarterKey"
+              },
+              "externalApiKeys": {},
+              "intentsCount": 2,
+              "entitiesCount": 0,
+              "endpointHitsCount": 0,
+              "trainingStatus": "NeedsTraining"
+            },
+            {
+              "version": "trav2",
+              "createdDateTime": "2017-10-08T12:26:10Z",
+              "lastModifiedDateTime": "2017-10-08T12:26:54Z",
+              "lastTrainedDateTime": null,
+              "lastPublishedDateTime": null,
+              "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2cce2d6a-2500-4ce7-804c-51da84609209",
+              "assignedEndpointKey": {
+                "SubscriptionKey": "fb3488ba06614b4985c1baa7a0af0376",
+                "SubscriptionRegion": "westus",
+                "SubscriptionName": "StarterKey"
+              },
+              "externalApiKeys": {},
+              "intentsCount": 2,
+              "entitiesCount": 0,
+              "endpointHitsCount": 0,
+              "trainingStatus": "NeedsTraining"
+            }
+          ]
+        },
+        {
+          "route": "settings",
+          "values": {
+            "id": "2cce2d6a-2500-4ce7-804c-51da84609209",
+            "public": false
+          }
+        },
+        {
+          "route": "endpoints",
+          "values": {
+            "westus": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2cce2d6a-2500-4ce7-804c-51da84609209",
+            "eastus2": "https://eastus2.api.cognitive.microsoft.com/luis/v2.0/apps/2cce2d6a-2500-4ce7-804c-51da84609209",
+            "westcentralus": "https://westcentralus.api.cognitive.microsoft.com/luis/v2.0/apps/2cce2d6a-2500-4ce7-804c-51da84609209",
+            "southeastasia": "https://southeastasia.api.cognitive.microsoft.com/luis/v2.0/apps/2cce2d6a-2500-4ce7-804c-51da84609209"
+          }
+        },
+        {
+          "route": "versionExports",
+          "values": [
+            {
+              "luis_schema_version": "2.1.0",
+              "versionId": "0.1",
+              "name": "TravelApp",
+              "desc": "",
+              "culture": "en-us",
+              "intents": [
+                {
+                  "name": "None"
+                },
+                {
+                  "name": "Travel"
+                }
+              ],
+              "entities": [],
+              "composites": [],
+              "closedLists": [],
+              "bing_entities": [],
+              "actions": [],
+              "model_features": [],
+              "regex_features": [],
+              "utterances": [
+                {
+                  "text": "book a ticket",
+                  "intent": "Travel",
+                  "entities": []
+                },
+                {
+                  "text": "turnonlight",
+                  "intent": "None",
+                  "entities": []
+                },
+                {
+                  "text": "turn on the right lighttimezoneoffset=0",
+                  "intent": "None",
+                  "entities": []
+                },
+                {
+                  "text": "turn%20on%20left%20light",
+                  "intent": "None",
+                  "entities": []
+                }
+              ]
+            },
+            {
+              "luis_schema_version": "2.1.0",
+              "versionId": "trav2",
+              "name": "TravelApp",
+              "desc": "",
+              "culture": "en-us",
+              "intents": [
+                {
+                  "name": "None"
+                },
+                {
+                  "name": "Travel"
+                }
+              ],
+              "entities": [],
+              "composites": [],
+              "closedLists": [],
+              "bing_entities": [],
+              "actions": [],
+              "model_features": [],
+              "regex_features": [],
+              "utterances": [
+                {
+                  "text": "book a ticket",
+                  "intent": "Travel",
+                  "entities": []
+                },
+                {
+                  "text": "turnonlight",
+                  "intent": "None",
+                  "entities": []
+                },
+                {
+                  "text": "turn on the right lighttimezoneoffset=0",
+                  "intent": "None",
+                  "entities": []
+                },
+                {
+                  "text": "turn%20on%20left%20light",
+                  "intent": "None",
+                  "entities": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "433da052-7d8e-4eb0-882e-d32594a42875",
+      "name": "utterance test",
+      "description": "",
+      "culture": "en-us",
+      "usageScenario": "",
+      "domain": "",
+      "versionsCount": 1,
+      "createdDateTime": "2017-11-01T19:15:34Z",
+      "endpoints": {},
+      "endpointHitsCount": 0,
+      "activeVersion": "0.1",
+      "properties": [
+        {
+          "route": "appInfo",
+          "values": {
+            "id": "433da052-7d8e-4eb0-882e-d32594a42875",
+            "name": "utterance test",
+            "description": "",
+            "culture": "en-us",
+            "usageScenario": "",
+            "domain": "",
+            "versionsCount": 1,
+            "createdDateTime": "2017-11-01T19:15:34Z",
+            "endpoints": {},
+            "endpointHitsCount": 0,
+            "activeVersion": "0.1"
+          }
+        },
+        {
+          "route": "versions",
+          "values": [
+            {
+              "version": "0.1",
+              "createdDateTime": "2017-11-01T19:15:33Z",
+              "lastModifiedDateTime": "2017-11-01T19:26:04Z",
+              "lastTrainedDateTime": null,
+              "lastPublishedDateTime": null,
+              "endpointUrl": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/433da052-7d8e-4eb0-882e-d32594a42875",
+              "assignedEndpointKey": {
+                "SubscriptionKey": "fb3488ba06614b4985c1baa7a0af0376",
+                "SubscriptionRegion": "westus",
+                "SubscriptionName": "StarterKey"
+              },
+              "externalApiKeys": {},
+              "intentsCount": 1,
+              "entitiesCount": 0,
+              "endpointHitsCount": 0,
+              "trainingStatus": "NeedsTraining"
+            }
+          ]
+        },
+        {
+          "route": "settings",
+          "values": {
+            "id": "433da052-7d8e-4eb0-882e-d32594a42875",
+            "public": false
+          }
+        },
+        {
+          "route": "endpoints",
+          "values": {
+            "westus": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/433da052-7d8e-4eb0-882e-d32594a42875",
+            "eastus2": "https://eastus2.api.cognitive.microsoft.com/luis/v2.0/apps/433da052-7d8e-4eb0-882e-d32594a42875",
+            "westcentralus": "https://westcentralus.api.cognitive.microsoft.com/luis/v2.0/apps/433da052-7d8e-4eb0-882e-d32594a42875",
+            "southeastasia": "https://southeastasia.api.cognitive.microsoft.com/luis/v2.0/apps/433da052-7d8e-4eb0-882e-d32594a42875"
+          }
+        },
+        {
+          "route": "versionExports",
+          "values": [
+            {
+              "luis_schema_version": "2.1.0",
+              "versionId": "0.1",
+              "name": "utterance test",
+              "desc": "",
+              "culture": "en-us",
+              "intents": [
+                {
+                  "name": "None"
+                }
+              ],
+              "entities": [],
+              "composites": [],
+              "closedLists": [],
+              "bing_entities": [],
+              "actions": [],
+              "model_features": [],
+              "regex_features": [],
+              "utterances": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
